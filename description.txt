@@ -1,0 +1,10 @@
+29-12-2025
+  we have created detect_crop.ipynb file to detect the face, crop it and then resize it to 112*112 (standard arcface input size)
+  for face detection we are using blaze_face_short_range.tflite model (by google). it creates 6 landmarks on the face.
+  then using these landmarks we crop the pic so that the majority part of the image contains face only.
+  reason to do this: so that arcface can create the best embedding for face
+
+  tester_blocks.ipynb file is there to test out wheter the arcface is working properly. it creates a 512 dim vector embedding if give a face image
+  iresnet.py is an imporved version of resnet. it works like a backbone to the arcface.
+
+  the output of the detect_crop file would become the input for the arcface model
