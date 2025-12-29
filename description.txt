@@ -8,3 +8,5 @@
   iresnet.py is an imporved version of resnet. it works like a backbone to the arcface.
 
   the output of the detect_crop file would become the input for the arcface model
+
+  not adding the arcface.pth file here because of github file size limit
